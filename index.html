@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shruthi – iOS Developer</title>
+<meta name="description" content="Shruthi is an iOS developer in Sydney building calm, accessible, people-first apps with Swift and SwiftUI.">
+<style>
+:root { --bg:#f6f7fb; --ink:#1b2333; --soft:#5a6475; --accent:#3b6fd8; --card:#ffffff; --line:#e3e7ef; }
+@media (prefers-color-scheme: dark) { :root { --bg:#10141d; --ink:#eef2f8; --soft:#a8b2c3; --accent:#8fb1ff; --card:#1a2030; --line:#2a3245; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 -apple-system, system-ui, sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 8px; }
+h2 { font-size: 1.4rem; margin: 44px 0 14px; }
+p { margin: 0 0 12px; }
+a { color: var(--accent); }
+.lead { font-size: 1.15rem; color: var(--soft); max-width: 640px; }
+.links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+.links a { text-decoration:none; background:var(--card); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:.95rem; }
+.apps { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+.app { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:20px; display:flex; flex-direction:column; gap:12px; }
+.app header { display:flex; align-items:center; gap:14px; }
+.app header img { width:60px; height:60px; border-radius:15px; box-shadow:0 3px 10px rgba(0,0,0,.15); }
+.app h3 { margin:0; font-size:1.2rem; }
+.app .status { font-size:.85rem; color:var(--soft); }
+.shot { width:100%; max-width:220px; align-self:center; border-radius:22px; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+.tags { display:flex; flex-wrap:wrap; gap:6px; }
+.tags span { font-size:.8rem; border:1px solid var(--line); border-radius:999px; padding:2px 10px; color:var(--soft); }
+.app .more { display:flex; gap:14px; font-size:.95rem; margin-top:auto; }
+ul.principles { padding-left: 20px; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+td { padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+td:last-child { color:var(--soft); white-space:nowrap; text-align:right; }
+.grid2 { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:10px; }
+.mini { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; font-size:.95rem; }
+.mini a { font-weight:600; text-decoration:none; }
+footer { margin-top:48px; color:var(--soft); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hi, I'm Shruthi 👋</h1>
+  <p class="lead">iOS developer in Sydney building calm, accessible, people-first apps with Swift and SwiftUI. Over a decade of shipping mobile apps, from banking apps used by millions to my own apps, designed and released end to end.</p>
+  <div class="links">
+    <a href="https://github.com/shruezee">GitHub</a>
+    <a href="mailto:shruthianthropic@gmail.com">shruthianthropic@gmail.com</a>
+    <a href="https://www.google.com/maps/place/Sydney">📍 Sydney, Australia</a>
+  </div>
+
+  <h2>Latest apps</h2>
+  <div class="apps">
+    <article class="app">
+      <header>
+        <img src="KindDose/images/app-icon.jpg" alt="KindDose app icon">
+        <div><h3>KindDose</h3><div class="status">iPhone &amp; iPad · App Store: in review</div></div>
+      </header>
+      <p>Gentle medicine reminders, designed elder-first. One big button to log a dose, a kind word and a joke afterwards, and no guilt when a dose is missed.</p>
+      <img class="shot" src="KindDose/images/01-home.jpg" alt="KindDose home screen with a large I took it button">
+      <div class="tags"><span>SwiftUI</span><span>SwiftData</span><span>WidgetKit</span><span>App Intents</span><span>AlarmKit</span><span>VisionKit</span><span>HealthKit</span><span>Swift Testing</span></div>
+      <div class="more"><a href="KindDose/">Website</a><a href="https://github.com/shruezee/KindDose">Code</a></div>
+    </article>
+    <article class="app">
+      <header>
+        <img src="MiniMingle-Games/images/app-icon.png" alt="MiniMingle Games app icon">
+        <div><h3>MiniMingle Games</h3><div class="status">iPhone &amp; iPad · App Store: in review</div></div>
+      </header>
+      <p>Five classic games with six cartoon heroes, made for kids aged 6–8. Play the computer or a friend, with a parental gate and a daily play timer.</p>
+      <img class="shot" src="MiniMingle-Games/images/screenshot-home.png" alt="MiniMingle Games home screen">
+      <div class="tags"><span>SwiftUI</span><span>Kids Category</span><span>Accessibility</span><span>Offline &amp; private</span></div>
+      <div class="more"><a href="MiniMingle-Games/">Website</a><a href="https://github.com/shruezee/MiniMingle-Games">Code</a></div>
+    </article>
+  </div>
+
+  <h2>How I build</h2>
+  <ul class="principles">
+    <li><strong>Accessibility first:</strong> Dynamic Type, VoiceOver, Voice Control, large tap targets, never colour alone.</li>
+    <li><strong>Kind UX:</strong> plain language, no guilt, no dark patterns.</li>
+    <li><strong>Private by default:</strong> no tracking, data stays on the device.</li>
+    <li><strong>Shipped, not just built:</strong> TestFlight, App Store review, privacy policies and listings, end to end.</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <table>
+    <tr><td><strong>Mobile Application Developer</strong>, HSBC — Australian banking apps: accounts, payments, profile, testing strategy and releases</td><td>2020–2026</td></tr>
+    <tr><td><strong>Mobile Application Developer</strong>, Logbook Me — GPS and OBD trip logging, SAML single sign-on, pre-drive checklists</td><td>2019–2020</td></tr>
+    <tr><td><strong>iOS Developer</strong>, Transport for NSW (TCS) — fault-management app for Sydney Trains staff</td><td>2018–2019</td></tr>
+    <tr><td><strong>iOS Developer</strong>, Commonwealth Bank (TCS) — CBA and Property apps; Best Performer in Digital (Q3)</td><td>2017–2018</td></tr>
+    <tr><td><strong>iOS Developer</strong>, Omni Market Tide — reusable Swift components, watchOS</td><td>2016–2017</td></tr>
+    <tr><td><strong>Senior Software Engineer</strong>, Harman International — Objective-C, BLE and HealthKit proofs of concept, tech lead</td><td>2013–2015</td></tr>
+  </table>
+
+  <h2>Earlier open-source experiments</h2>
+  <div class="grid2">
+    <div class="mini"><a href="https://github.com/shruezee/GenericPopovers">GenericPopovers</a><br>Themeable popovers from one reusable base class</div>
+    <div class="mini"><a href="https://github.com/shruezee/SwiftGenericAlertViewController">SwiftGenericAlertViewController</a><br>The same idea as a modular framework</div>
+    <div class="mini"><a href="https://github.com/shruezee/MultipleAppIcons-RequestReview">MultipleAppIcons-RequestReview</a><br>Alternate app icons and in-app reviews</div>
+    <div class="mini"><a href="https://github.com/shruezee/CustomTableviewRowAction">CustomTableviewRowAction</a><br>Swipe actions with icons and custom styling</div>
+    <div class="mini"><a href="https://github.com/shruezee/TableView-HeaderAnimation">TableView-HeaderAnimation</a><br>Collapsible table sections</div>
+    <div class="mini"><a href="https://github.com/shruezee/MultipleImage-TableViewCell-CameraCapture">MultipleImage-TableViewCell-CameraCapture</a><br>Camera photos per table row</div>
+    <div class="mini"><a href="https://github.com/shruezee/MovieList">MovieList</a><br>JSON list and detail with adaptive layout</div>
+    <div class="mini"><a href="https://github.com/shruezee/Ashtotra-App">Ashtotra</a><br>Multilingual devotional reader with PDFKit</div>
+  </div>
+
+  <footer>Open to iOS roles and collaborations · <a href="mailto:shruthianthropic@gmail.com">Say hello</a> · © 2026 Shruthi</footer>
+</main>
+</body>
+</html>
